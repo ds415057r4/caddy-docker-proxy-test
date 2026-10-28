@@ -1,0 +1,13 @@
+name: web-a
+
+services:
+  web-a:
+    image: web-test:latest
+    expose:
+      - "8080"
+    networks:
+      - "caddy"
+
+networks:
+  caddy:
+    external: true

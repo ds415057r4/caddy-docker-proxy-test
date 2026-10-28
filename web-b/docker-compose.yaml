@@ -1,0 +1,13 @@
+name: web-b
+
+services:
+  web-b:
+    image: web-test:latest
+    expose:
+      - "8080"
+    networks:
+      - "caddy"
+
+networks:
+  caddy:
+    external: true

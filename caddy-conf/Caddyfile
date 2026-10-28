@@ -1,0 +1,7 @@
+http://a.kdh {
+	reverse_proxy web-a-web-a-1:8080
+}
+
+http://b.kdh {
+	reverse_proxy web-b-web-b-1:8080
+}
